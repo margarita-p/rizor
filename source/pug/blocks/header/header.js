@@ -6,16 +6,23 @@ const mainNav = $('.header__main-nav');
 const btnOpen = $('.header__open-nav');
 // const btnClose = $('.header__close-nav');
 
-const open = () => {
+const toggle = () => {
   mainNav.classList.toggle(ACTIVE);
   btnOpen.classList.toggle(ACTIVE);
 };
 
-const close = () => mainNav.classList.remove(ACTIVE);
+// const open = () => mainNav.classList.add(ACTIVE);
+// const close = () => mainNav.classList.remove(ACTIVE);
+
+const close = () => {
+  mainNav.classList.remove(ACTIVE);
+  btnOpen.classList.remove(ACTIVE);
+}
+
 
 const onBtnOpenClick = e => {
   e.preventDefault();
-  open();
+  toggle();
 };
 
 // const onBtnCloseClick = e => {
@@ -23,20 +30,20 @@ const onBtnOpenClick = e => {
 //   close();
 // };
 
-const closeOnDoc = e => {
-  const target = e.target;
-  const nav = target == mainNav || mainNav.contains(target);
-  // const btn = target == btnNav || btnNav.contains(target);
-  const active = mainNav.classList.contains(ACTIVE);
-  if (!nav && active) {
-    close();
-  }
-};
+// const closeOnDoc = e => {
+//   const target = e.target;
+//   const nav = target == mainNav || mainNav.contains(target);
+//   // const btn = target == btnNav || btnNav.contains(target);
+//   const active = mainNav.classList.contains(ACTIVE);
+//   if (!nav && active) {
+//     close();
+//   }
+// };
 
-const onDocClick = e => {
-  e.preventDefault();
-  closeOnDoc(e);
-};
+// const onDocClick = e => {
+//   e.preventDefault();
+//   closeOnDoc(e);
+// };
 
 const onEscKeyup = e => {
   e.preventDefault();
@@ -45,5 +52,5 @@ const onEscKeyup = e => {
 
 btnOpen.addEventListener('click', onBtnOpenClick);
 // btnClose.addEventListener('click', onBtnCloseClick);
-document.addEventListener('mouseup', onDocClick);
+// document.addEventListener('mouseup', onDocClick);
 document.addEventListener('keyup', onEscKeyup);
