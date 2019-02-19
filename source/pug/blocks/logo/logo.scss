@@ -1,0 +1,42 @@
+$logo-w-sm: 120px;
+$logo-h-sm: 30px;
+$logo-w-md: 156px;
+$logo-h-md: 39px;
+// $logo-w-lg: 156px;
+// $logo-h-lg: 39px;
+
+.logo {
+  display: block;
+  width: $logo-w-sm;
+  height: $logo-h-sm;
+}
+
+.logo__image {
+  display: block;
+  width: $logo-w-sm;
+  height: $logo-h-sm;
+}
+
+@include respond-to(medium) {
+  .logo {
+    width: $logo-w-md;
+    height: $logo-h-md;
+  }
+
+  .logo__image {
+    width: $logo-w-md;
+    height: $logo-h-md;
+  }
+}
+
+// @include respond-to(large) {
+//   .logo {
+//     width: $logo-w-lg;
+//     height: $logo-h-lg;
+//   }
+//
+//   .logo__image {
+//     width: $logo-w-lg;
+//     height: $logo-h-lg;
+//   }
+// }

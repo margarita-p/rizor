@@ -1,0 +1,26 @@
+mixin header(data)
+    +el({
+        tag: 'header',
+        class: 'header',
+        mix: data.mix,
+        mod: data.mod,
+        js: data.js,
+    })&attributes(attributes)
+        +el({
+            class: 'header__wrapper',
+        })
+            +logo({
+                mix: 'header__logo',
+            })
+            +button-nav({
+                mix: 'header__open-nav',
+            })
+            nav.header__main-nav
+                +main-nav({
+                    items: [
+                        'Преимущества',
+                        'Характеристики',
+                        'Для кого',
+                    ],
+                    line: true,
+                })
