@@ -1,22 +1,22 @@
-.design {
+.feature-design {
 
 }
 
-.design__image-container {
+.feature-design__image-container {
   display: none;
 }
 
-.design__image {
+.feature-design__image {
 
 }
 
 @include respond-to(medium) {
-  .design {
+  .feature-design {
     position: relative;
     padding-top: 190px;
   }
 
-  .design__image-container {
+  .feature-design__image-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -26,7 +26,7 @@
     height: 600px;
   }
 
-  .design__image {
+  .feature-design__image {
     display: block;
     height: 600px;
     max-width: none;
@@ -34,17 +34,17 @@
 }
 
 @include respond-to(large) {
-  .design {
+  .feature-design {
     padding-top: 200px;
     padding-right: 400px;
   }
 
-  .design__image-container {
+  .feature-design__image-container {
     transform: translateX(calc(-100% - 100px));
     height: 750px;
   }
 
-  .design__image {
+  .feature-design__image {
     height: 750px;
   }
 }
