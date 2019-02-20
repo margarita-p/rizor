@@ -1,0 +1,29 @@
+mixin features-item-design(data)
+    +el({
+        tag: 'section',
+        class: 'features-item',
+        mix: data.mix,
+        mod: data.mod,
+        js: data.js,
+    })&attributes(attributes)
+        +el({
+            class: 'features-item__image-container',
+        })
+            +el({
+                tag: 'img',
+                class: 'features__image',
+                src: 'index02.jpg',
+            })
+        +el({
+            tag: 'h3',
+            class: 'features-item__heading',
+            text: 'Дизайн',
+        })
+        +el({
+            tag: 'p',
+            text: 'Внешний вид скутера дышит идеями футуризма: ',
+        })
+        +list({
+            mix: 'features-item__list',
+            items: ['плавные линии', 'подсветка светодиодными индикаторами', 'рельефные бамперы, оснащенные защитными панелями']
+        })

@@ -1,0 +1,29 @@
+.features {
+
+}
+
+.features__wrapper {
+  @include wrapper;
+}
+
+@include respond-to(medium) {
+  .features__heading,
+  .features__item--design {
+    width: calc(50% - 70px);
+    margin-left: auto;
+  }
+
+  .features__heading {
+    margin-bottom: -90px;
+  }
+
+}
+
+@include respond-to(large) {
+  .features__heading,
+  .features__item--design {
+    width: 700px
+  }
+
+
+}

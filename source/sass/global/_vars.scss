@@ -9,16 +9,14 @@ $fonts: (
 
 $breakpoints: (
   small: 320px,
-  small-lg: 480px,
-  medium: 748px,
-  large: 1024px,
-  large-lg: 1200px,
+  medium: 768px,
+  large: 1200px,
 );
 
 $pads: (
   small: 20px,
-  medium: 32px,
-  large: 44px,
+  medium: 20px,
+  large: 20px,
 );
 
 $retina-dpi: 144dpi;
