@@ -1,6 +1,7 @@
 import { $ } from '../../../scripts/global/selector';
 import { ACTIVE } from '../../../scripts/global/const';
 import onEsc from '../../../scripts/global/onEsc';
+// import closeModalOnDock from '../../../scripts/global/closeModalOnDock';
 
 const mainNav = $('.header__main-nav');
 const btnOpen = $('.header__open-nav');
@@ -30,19 +31,9 @@ const onBtnOpenClick = e => {
 //   close();
 // };
 
-// const closeOnDoc = e => {
-//   const target = e.target;
-//   const nav = target == mainNav || mainNav.contains(target);
-//   // const btn = target == btnNav || btnNav.contains(target);
-//   const active = mainNav.classList.contains(ACTIVE);
-//   if (!nav && active) {
-//     close();
-//   }
-// };
-
 // const onDocClick = e => {
 //   e.preventDefault();
-//   closeOnDoc(e);
+//   closeModalOnDock(e, mainNav, close);
 // };
 
 const onEscKeyup = e => {

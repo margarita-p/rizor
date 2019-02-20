@@ -53,12 +53,8 @@
   margin-left: 10px;
 
   svg {
-    display: block;
-    width: 100%;
-    height: 100%;
+    @include ofi-contain-center;
     fill: currentColor;
-
-    @include object-fit(contain);
   }
 }
 
