@@ -19,7 +19,7 @@
     "lint": "npm run lint:styles && npm run lint:scripts",
     "l": "npm run lint",
     "zip": "set NODE_ENV=production gulp build && gulp serviceWorker && gulp copy && gulp zip",
-    "z": "npm run zip",
+    "z": "npm run zip"
   },
   "keywords": [
     "development",
