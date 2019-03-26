@@ -1,0 +1,28 @@
+mixin indicators(data)
+    +el({
+        tag: 'section',
+        class: 'indicators',
+        mix: data.mix,
+        mod: data.mod,
+        js: data.js,
+    })&attributes(attributes)
+        .indicators__text-wrap
+            +el({
+                tag: 'h3',
+                class: 'indicators__heading',
+                text: 'Индикаторы',
+            })
+            +el({
+                tag: 'p',
+                text: 'Cветодиодные индикаторы сообщают окружающим о запланированном повороте. Своим мерцанием они мгновенно реагируют на смещение центра тяжести в правую или левую сторону.',
+            })
+            +el({
+                tag: 'p',
+                text: 'Как только ваше движение продолжится по прямой, мерцание прекратится, подсветка снова станет в виде сплошной линии.',
+            })
+        .indicators__image-wrap
+            +el({
+                tag: 'img',
+                class: 'indicators__image',
+                src: 'indicators01.jpg',
+            })

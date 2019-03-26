@@ -7,13 +7,22 @@ mixin features(data)
         js: data.js,
     })&attributes(attributes)
         +el({
-            class: 'features__wrapper',
+            class: 'features__wrap',
         })
             +el({
                 tag: 'h2',
                 class: 'features__heading',
                 text: 'Преимущества',
             })
-            +feature-design({
+            +design({
                 mix: 'features__item features__item--design'
+            })
+            +color({
+                mix: 'features__item features__item--color'
+            })
+            +indicators({
+                mix: 'features__item features__item--indicators'
+            })
+            +mode({
+                mix: 'features__item features__item--mode'
             })

@@ -1,0 +1,47 @@
+mixin mode(data)
+    +el({
+        tag: 'section',
+        class: 'mode',
+        mix: data.mix,
+        mod: data.mod,
+        js: data.js,
+    })&attributes(attributes)
+        +el({
+            class: 'mode__text-wrap',
+        })
+            +el({
+                tag: 'h3',
+                class: 'mode__heading',
+                text: 'Режимы',
+            })
+            +el({
+                tag: 'p',
+                text: 'Помимо «умной» подсветки, <b>Hovertrax 4.0</b> снабжён двумя скоростными режимами.',
+            })
+            +list({
+                mix: 'mode__list',
+                items: [
+                    'Один для продвинутых пользователей',
+                    'Второй для новичков'
+                ]
+            })
+            +advantages({
+                items: [
+                    {
+                        main: '13<span>км/ч</span>',
+                        sub: 'Максимальная <br>скорость'
+                    },
+                    {
+                        main: '2',
+                        sub: 'Скоростных <br>режима'
+                    },
+                ]
+            })
+        +el({
+            class: 'mode__image-wrap',
+        })
+            +el({
+                tag: 'img',
+                class: 'mode__image',
+                src: 'mode01.jpg',
+            })

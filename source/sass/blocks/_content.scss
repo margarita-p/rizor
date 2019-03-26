@@ -2,25 +2,22 @@
   @include wrapper;
 }
 
-.content__block {
+.content__section {
   margin-bottom: 64px;
+
   &:last-of-type {
     margin-bottom: 0;
   }
 }
 
-.content__heading {
-  margin-bottom: 40px;
-}
-
 @include respond-to(medium) {
-  .content__block {
-    margin-bottom: 150px;
+  .content__section {
+    margin-bottom: 250px;
   }
 }
 
 @include respond-to(large) {
-  .content__block {
-    margin-bottom: 200px;
+  .content__section {
+    margin-bottom: 290px;
   }
 }

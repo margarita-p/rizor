@@ -2,7 +2,7 @@
 
 }
 
-.intro__wrapper {
+.intro__wrap {
   position: relative;
   min-height: calc(100vh - 80px);
   padding: 40px 0;
@@ -12,7 +12,7 @@
   @include wrapper;
 }
 
-.intro__text-container {
+.intro__text-wrap {
   position: relative;
   z-index: 1;
   color: color(white);
@@ -22,7 +22,7 @@
   text-transform: uppercase;
 }
 
-.intro__image-container {
+.intro__image-wrap {
   position: absolute;
   top: 0;
   left: 0;
@@ -35,21 +35,21 @@
 }
 
 @include respond-to(medium) {
-  .intro__text-container {
+  .intro__text-wrap {
     color: color(black);
   }
 
-  .intro__image-container {
+  .intro__image-wrap {
     left: 270px;
   }
 }
 
 @include respond-to(large) {
-  .intro__wrapper {
+  .intro__wrap {
     min-height: 750px;
   }
 
-  .intro__image-container {
+  .intro__image-wrap {
     right: auto;
     left: 470px;
     width: 100%;

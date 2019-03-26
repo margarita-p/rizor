@@ -1,0 +1,58 @@
+.color__wrap {
+  @include wrapper
+}
+
+.color__text-wrap {
+  margin-bottom: 30px;
+}
+
+.color__image-wrap {
+  width: 100%;
+  max-width: 370px;
+}
+
+.color__image {
+  display: block;
+  width: 100%;
+}
+
+@include respond-to(medium) {
+  .color {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .color__text-wrap {
+    width: calc(100% - 445px - 20px);
+    margin-right: 20px;
+    padding-left: 95px;
+  }
+
+  .color__image-wrap {
+    width: 445px;
+    max-width: none;
+    margin: 0;
+    padding-right: 85px;
+  }
+}
+
+@include respond-to(large) {
+  .color {
+    display: block;
+    width: 380px;
+  }
+
+  .color__text-wrap {
+    width: 100%;
+    margin-right: 0;
+    padding-left: 105px;
+  }
+
+  .color__image-wrap {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding-top: 50px;
+    padding-right: 0;
+  }
+}

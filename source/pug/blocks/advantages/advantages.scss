@@ -1,0 +1,33 @@
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.advantages__item {
+  width: 50%;
+  padding: 0 12px;
+  margin-bottom: 20px;
+}
+
+.advantages__main {
+  font-family: font(secondary);
+  font-size: 38px;
+  line-height: 1;
+  color: color(primary);
+  text-align: left;
+
+  span {
+    font-size: 18px;
+  }
+}
+
+.advantages__sub {
+  color: #666;
+}
+
+.advantages__unit {
+
+}

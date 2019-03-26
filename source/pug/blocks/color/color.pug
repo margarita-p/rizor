@@ -1,0 +1,28 @@
+mixin color(data)
+    +el({
+        tag: 'section',
+        class: 'color',
+        mix: data.mix,
+        mod: data.mod,
+        js: data.js,
+    })&attributes(attributes)
+        +el({
+            class: 'color__text-wrap',
+        })
+            +el({
+                tag: 'h3',
+                class: 'color__heading',
+                text: 'Цвет',
+            })
+            +el({
+                tag: 'p',
+                text: 'Модель представлена сразу в&nbsp;нескольких цветах.',
+            })
+        +el({
+            class: 'color__image-wrap',
+        })
+            +el({
+                tag: 'img',
+                class: 'color__image',
+                src: 'color01.png',
+            })

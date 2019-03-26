@@ -4,6 +4,7 @@
 
   @include respond-to(large) {
     width: breakpoints(large);
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

@@ -9,3 +9,10 @@ for (let i = 0; i < links.length; i += 1) {
     line.style.left = left + 'px';
   });
 }
+
+for (let i = 0; i < links.length; i += 1) {
+  links[i].addEventListener('mouseover', () => {
+    const left = links[i].offsetLeft;
+    line.style.left = left + 'px';
+  });
+}

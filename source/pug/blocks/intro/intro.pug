@@ -7,22 +7,22 @@ mixin intro(data)
         js: data.js,
     })&attributes(attributes)
         +el({
-            class: 'intro__wrapper',
+            class: 'intro__wrap',
         })
             +el({
-                class: 'intro__text-container',
+                class: 'intro__text-wrap',
             })
                 +el({
                     tag: 'h1',
                     class: 'intro__heading',
-                    text: 'RIzor <br>Hovertrax <br>4.0',
+                    text: 'Rizor <br>Hovertrax <br>4.0',
                 })
                 +el({
                     class: 'intro__subheading',
                     text: 'Маневренность, легкость, <br>экологичность',
                 })
             +el({
-                class: 'intro__image-container',
+                class: 'intro__image-wrap',
             })
                 +el({
                     tag: 'img',
