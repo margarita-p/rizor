@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <title>Lipsum</title>
+    <meta name="description" content="The template for quick start of development with Gulp, Pug and Scss">
+    <meta name="keywords" content="bem, frontend, project, template, lorem lipsum">
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="address=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&amp;amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="./assets/libs/styles/lib.css">
     <link rel="stylesheet" href="./css/styles.min.css">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body>
     <header class="header">
@@ -45,39 +48,96 @@
       </div>
     </header>
     <div class="content">
-      <article class="intro content__block">
-        <div class="intro__wrapper">
-          <div class="intro__text-container">
-            <h1 class="intro__heading">RIzor <br>Hovertrax <br>4.0
+      <article class="intro content__section">
+        <div class="intro__wrap">
+          <div class="intro__text-wrap">
+            <h1 class="intro__heading">Rizor <br>Hovertrax <br>4.0
             </h1>
             <div class="intro__subheading">Маневренность, легкость, <br>экологичность
             </div>
           </div>
-          <div class="intro__image-container">
+          <div class="intro__image-wrap">
             <img class="intro__image" src="./assets/images/intro01.jpg" alt=" ">
           </div>
         </div>
       </article>
-      <article class="features content__block">
-        <div class="features__wrapper">
+      <article class="features content__section">
+        <div class="features__wrap">
           <h2 class="features__heading">Преимущества
           </h2>
-          <section class="feature-design features__item features__item--design">
-            <div class="feature-design__image-container">
-              <img class="feature-design__image" src="./assets/images/feature-design01.jpg" alt=" ">
+          <section class="design features__item features__item--design">
+            <div class="design__image-wrap">
+              <img class="design__image" src="./assets/images/design01.jpg" alt=" ">
             </div>
-            <h3 class="feature-design__heading">Дизайн
-            </h3>
-            <p>Внешний вид скутера дышит идеями футуризма: 
-            </p>
-            <ul class="list feature-design__list">
-              <li class="list__item">плавные линии
-              </li>
-              <li class="list__item">подсветка светодиодными индикаторами
-              </li>
-              <li class="list__item">рельефные бамперы, оснащенные защитными панелями
-              </li>
-            </ul>
+            <div class="design__text-wrap">
+              <h3 class="design__heading">Дизайн
+              </h3>
+              <p>Внешний вид скутера дышит идеями футуризма: 
+              </p>
+              <ul class="list design__list">
+                <li class="list__item">плавные линии
+                </li>
+                <li class="list__item">подсветка светодиодными индикаторами
+                </li>
+                <li class="list__item">рельефные бамперы, оснащенные защитными панелями
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="color features__item features__item--color">
+            <div class="color__text-wrap">
+              <h3 class="color__heading">Цвет
+              </h3>
+              <p>Модель представлена сразу в&nbsp;нескольких цветах.
+              </p>
+            </div>
+            <div class="color__image-wrap">
+              <img class="color__image" src="./assets/images/color01.png" alt=" ">
+            </div>
+          </section>
+          <section class="indicators features__item features__item--indicators">
+            <div class="indicators__text-wrap">
+              <h3 class="indicators__heading">Индикаторы
+              </h3>
+              <p>Cветодиодные индикаторы сообщают окружающим о запланированном повороте. Своим мерцанием они мгновенно реагируют на смещение центра тяжести в правую или левую сторону.
+              </p>
+              <p>Как только ваше движение продолжится по прямой, мерцание прекратится, подсветка снова станет в виде сплошной линии.
+              </p>
+            </div>
+            <div class="indicators__image-wrap">
+              <img class="indicators__image" src="./assets/images/indicators01.jpg" alt=" ">
+            </div>
+          </section>
+          <section class="mode features__item features__item--mode">
+            <div class="mode__text-wrap">
+              <h3 class="mode__heading">Режимы
+              </h3>
+              <p>Помимо «умной» подсветки, <b>Hovertrax 4.0</b> снабжён двумя скоростными режимами.
+              </p>
+              <ul class="list mode__list">
+                <li class="list__item">Один для продвинутых пользователей
+                </li>
+                <li class="list__item">Второй для новичков
+                </li>
+              </ul>
+              <ul class="advantages">
+                <li class="advantages__item">
+                  <div class="advantages__main">13<span>км/ч</span>
+                  </div>
+                  <div class="advantages__sub">Максимальная <br>скорость
+                  </div>
+                </li>
+                <li class="advantages__item">
+                  <div class="advantages__main">2
+                  </div>
+                  <div class="advantages__sub">Скоростных <br>режима
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="mode__image-wrap">
+              <img class="mode__image" src="./assets/images/mode01.jpg" alt=" ">
+            </div>
           </section>
         </div>
       </article>
